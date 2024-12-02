@@ -1,0 +1,38 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.pt-4
+{
+  padding-right:0px;
+}
+
+
+.auto-style1 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  text-align: center;
+}
+
+#center{
+  width:100%;
+}
+
+#menu{
+  float:left;
+  width:20%;
+}
+
+#slideshow{
+  float:left;
+  width:80%;
+}
+.font:hover {
+  color: #FA748F;
+}
+
+
