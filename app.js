@@ -7,8 +7,14 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose = require('mongoose');
 
+const session = require('express-session');
+const passport = require('passport');
+
+const passportConfig = require('./config/passport');
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var adminRoutes = require('./routes/admin');
 
 var app = express();
 
@@ -24,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/', adminRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
